@@ -1,2 +1,3 @@
-
-  cout << "[" << result[0] << ", " << result[1] << "]" << endl;
+swap(s[leftPointer], s[rightPointer]);
+    leftPointer++;
+    rightPointer--;

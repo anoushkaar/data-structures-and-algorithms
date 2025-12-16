@@ -5,10 +5,26 @@ using namespace std;
 
 void reverseString(vector<char> &s)
 {
+  int leftPointer = 0;
+  int rightPointer = s.size() - 1;
+  // char temp = s[leftPointer];
+  // s[leftPointer] = s[rightPointer];
+  // s[rightPointer] = temp;
+  while (leftPointer < rightPointer)
+  {
+    swap(s[leftPointer], s[rightPointer]);
+    leftPointer++;
+    rightPointer--;
+  }
+  cout << "after swap: ";
+  for (char c : s)
+    cout << c;
+  cout << endl;
 }
 
-int main() {
-  vector<char> s = {"h", "e", "l", "l", "o"};
-  reverseString;
+int main()
+{
+  vector<char> s = {'H', 'a', 'n', 'n', 'a', 'h'};
+  reverseString(s);
   return 0;
 }
